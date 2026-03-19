@@ -1,0 +1,17 @@
+# Tell pip where to find the older CUDA 11.3 compiled binaries
+--extra-index-url https://download.pytorch.org/whl/cu113
+
+# Pin PyTorch to the CUDA 11.3 build (compatible with Windows CUDA 11.4)
+torch==1.12.1+cu113
+torchvision==0.13.1+cu113
+
+# Restrict Numpy to 1.x to prevent C-header incompatibilities with older PyTorch
+numpy<2.0
+
+
+timm
+pandas
+matplotlib
+seaborn
+scikit-learn
+ipykernel
